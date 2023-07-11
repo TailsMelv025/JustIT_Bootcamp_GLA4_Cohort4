@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date and Time</title>
+  </head>
+  <body onload="updateTime()">
+    <h2>Current Date:</h2>
+    <p id="theDate"></p>
+    <br />
+    <h2>Current Date-Time:</h2>
+    <p id="dateTime"></p>
+    <br />
+    <h2>Current Date Only:</h2>
+    <p id="dateInfo"></p>
+    <br />
+    <h2>Current Time:</h2>
+    <p id="timeInfo"></p>
+    <br />
+    <h2>Current Hour:</h2>
+    <p id="hourInfo"></p>
+    <br />
+    <h2>Current Minute:</h2>
+    <p id="minuteInfo"></p>
+    <br />
+    <h2>Current Second:</h2>
+    <p id="secondsInfo"></p>
+    <br />
+
+    <script>
+      function displayDateTime() {
+        // create an instance object from the date class/library
+        let d = new Date(); // return a copy of the date time
+        let localDateTime = d.toLocaleString();
+        let localDate = d.toLocaleDateString();
+        let localTime = d.toLocaleTimeString();
+        let getHours = d.getHours();
+        let getMins = d.getMinutes();
+        let getSecs = d.getSeconds();
+        document.getElementById("theDate").innerHTML = d;
+        document.getElementById("dateTime").innerHTML = localDateTime;
+        document.getElementById("dateInfo").innerHTML = localDate;
+        document.getElementById("timeInfo").innerHTML = localTime;
+        document.getElementById("hourInfo").innerHTML = getHours;
+        document.getElementById("minuteInfo").innerHTML = getMins;
+        document.getElementById("secondsInfo").innerHTML = getSecs;
+      }
+
+      // function to update time(hours, minutes, and seconds)
+      function updateTime() {
+        setInterval(displayDateTime, 1000);
+      }
+    </script>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 1rem;
+      }
+      h2 {
+      }
+    </style>
+  </body>
+</html>

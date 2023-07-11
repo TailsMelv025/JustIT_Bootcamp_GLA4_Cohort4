@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/Day1/Day1.css" />
+  </head>
+  <body>
+    <!-- 
+        Inline style - height priority i.e. <p></p>
+        Internal style i.e. <style></style>
+        External style
+        The priority between internal and external styles will be whichever is given last
+        So if the link happens after the tag, then external will take priority
+        If the link happens before the tag, then internal will take priority
+        To overwrite priority, the "important" attribute can be added
+        If more than one is marked "important", then highest priority will go to the last one marked important
+     -->
+    <!-- selector{
+        property:value;
+    } -->
+
+    <p style="color: brown; font-size: 20px">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga natus
+      ducimus amet rerum numquam, facilis obcaecati dolor iste id nulla a
+      exercitationem, facere delectus dolores ipsam quis impedit. Esse, maiores.
+      Accusamus iusto aliquam cum atque accusantium, unde excepturi similique
+      error magni ducimus impedit. Nisi quidem sequi, maxime delectus quae
+      excepturi modi laudantium, laboriosam explicabo cum inventore quos autem
+      aut ex.
+    </p>
+
+    <style>
+      .p1 {
+        color: blueviolet;
+        font-size: 24px;
+      }
+    </style>
+    <h1>Heading1a</h1>
+    <h1>Heading1b</h1>
+    <h1>Heading1c</h1>
+    <p class="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga natus
+      ducimus amet rerum numquam, facilis obcaecati dolor iste id nulla a
+      exercitationem, facere delectus dolores ipsam quis impedit. Esse, maiores.
+      Accusamus iusto aliquam cum atque accusantium, unde excepturi similique
+      error magni ducimus impedit. Nisi quidem sequi, maxime delectus quae
+      excepturi modi laudantium, laboriosam explicabo cum inventore quos autem
+      aut ex.
+    </p>
+    <p class="p2" id="p4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga natus
+      ducimus amet rerum numquam, facilis obcaecati dolor iste id nulla a
+      exercitationem, facere delectus dolores ipsam quis impedit. Esse, maiores.
+      Accusamus iusto aliquam cum atque accusantium, unde excepturi similique
+      error magni ducimus impedit. Nisi quidem sequi, maxime delectus quae
+      excepturi modi laudantium, laboriosam explicabo cum inventore quos autem
+      aut ex.
+    </p>
+    <h1 style="color: aqua">Another Heading</h1>
+    <hr />
+    <div class="div1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum vero
+        ratione cumque. Minima, in a aliquid quae itaque dignissimos eum saepe
+        labore rem, molestias esse quaerat commodi cum odit! Qui iusto, quas
+        impedit odio praesentium totam autem blanditiis dolore adipisci
+        doloribus consectetur maxime consequuntur enim, similique quisquam.
+        Reiciendis, minima! Itaque pariatur beatae debitis dolore reiciendis
+        eveniet veritatis voluptates? Magni?
+      </p>
+      <h1 class="heading1">Heading1 in div</h1>
+    </div>
+    <input type="text" placeholder="Hello" />
+    <input type="password" placeholder="Hello" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap");
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <p class="fontest">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat rem quae
+      tempora iure quaerat saepe pariatur totam sunt aspernatur maxime nemo,
+      asperiores nihil eveniet, molestias, ad beatae debitis esse ea?
+    </p>
+  </body>
+</html>

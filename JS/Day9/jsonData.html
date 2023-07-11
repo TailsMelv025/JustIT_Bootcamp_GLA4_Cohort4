@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- JSON Object
+    Works in key / value pairs - both wrapped in double quotes
+Cannot contain functions(methods) -->
+
+    <p id="myJsonObject"></p>
+    <p id="myObjectKeys"></p>
+    <p id="stringedObject"></p>
+
+    <script>
+      // courseDetails is the JSON object
+      let courseDetails = {
+        // key/value pairs - both wrapped in double quotes
+        fullName: "Jane Doe", //fullName at index position 0
+        age: "25", //age at index position 1
+        language: "JavaScript", //language at index position 2
+        course: "Software Bootcamp", //course language at index position 3
+      };
+      console.log(courseDetails);
+      //   access values in JSON Object by name/variable/property/attribute
+      courseObject = document.getElementById("myJsonObject");
+
+      // objectName.atrributeName to display the values
+      courseObject.innerHTML =
+        "The user is " +
+        courseDetails.fullName +
+        "his age is " +
+        courseDetails.age +
+        "learning " +
+        courseDetails.language +
+        " in " +
+        courseDetails.course;
+
+      // access values by index
+      document.getElementById("myObjectKeys").innerHTML = {};
+      document.write(
+        "The data structure is an: ",
+        typeof courseDetails,
+        `<br/>`
+      );
+      // convert an object to string using stringify
+
+      let strCourseDetails = JSON.stringify(courseDetails);
+      document.write(
+        "The data structure is an: ",
+        typeof strCourseDetails,
+        "<br/>"
+      );
+      document.write("The data structure is an: ", strCourseDetails, "<br/>");
+      document.write("The data: ", strCourseDetails, "<br/>");
+    </script>
+  </body>
+</html>

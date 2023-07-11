@@ -1,0 +1,105 @@
+/* TODO
+Grid with
+Header - Navigation Bar and Logo
+Footer
+Side Bar
+Main */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.container{
+    margin: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 100px 100px auto 150px;
+    grid-template-areas: 'header header' 'menu menu' 'main side' 'footer footer';
+}
+.container div{
+    background: linear-gradient(150deg,red,yellow);
+}
+.header{
+    grid-area: header;
+    text-align: center;
+}
+.footer{
+    grid-area: footer;
+}
+.menu{
+    grid-area: menu;
+    position: sticky;
+    top: 0;
+}
+.side{
+    grid-area: side;
+}
+.main{
+    grid-area: main;
+}
+
+ /* ****************NAVIGATION BAR************** */
+ nav{
+    position: sticky;
+   top:0px;
+   z-index: 1;
+}
+ ul{
+   padding:0px;
+   margin:0px; 
+   list-style-type: none;
+   background-color: #cc0;
+   
+   overflow: hidden;
+ }
+ li a{
+    color: rgb(64, 29, 4);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+ }
+ li{
+  display: inline;
+ }
+ li a:hover{
+    background-color: #ff0;
+    border-radius: 8px;
+ }
+ header{
+    height: 90px;
+    background-color: blueviolet;
+    text-align: center;
+    /* position: sticky; */
+    /* top:0px; */
+ }
+ /*Add a drop down menu to the subjects
+ CSS
+ HTML
+ JavaScript
+ Database
+ */
+ .subList{
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 0px;
+ }
+ .subMenu{
+    margin-top: 0px;
+    display: none;
+    position: absolute;
+    width: 120px;
+    background-color: gray;
+ }
+ .subList:hover .subMenu{
+    display: block;
+ }
+ .subMenu a{
+    display: block;
+    margin-top: 0px;
+
+    /* text-align: left; */
+ }
+ 

@@ -1,0 +1,25 @@
+// Comparison Operators:
+
+// == - Equal to
+
+// === - Equal Value and Equal Data Type
+
+// != - Not Equal to
+
+// !== - Not Equal Value or Equal Data Type
+
+// > - Greater Than
+
+// < - Less Than
+
+// >= - Greater than or equal to
+
+// <= - Less than or equal to 
+
+// Logical Operators:
+
+// || - or
+
+// && - and
+
+// ! - not

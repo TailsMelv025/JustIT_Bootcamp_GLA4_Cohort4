@@ -1,0 +1,61 @@
+/* !TASK 
+Add four pictures
+Resize the pictures
+Practice with fixed, absolute, relative, and sticky properties
+Use position property to overlap them */
+
+img{
+    object-fit:cover;
+    height: 250px;
+    width: 250px;
+}
+
+.elephant{
+    position: fixed;
+    top:40%;
+    left: 20%;
+}
+
+.fox{
+ position: absolute;
+ top:40%;
+ right: 20%;
+}
+
+.giraffe{
+ position: relative;
+ bottom:30%;
+ left:20%;
+}
+
+.londoneye{
+ position: sticky;
+ bottom:0%;
+ right:20%;
+}
+
+/* add a table
+add some data inside table
+design table using CSS */
+
+/* Add a drop down menu to the subjects: CSS, HTML, JavaScript, Database */
+.subList{
+    display: inline-block;
+    text-decoration: none;
+    position: sticky;
+    top: 0px;
+}
+.subMenu{
+    display: none;
+    position: relative;
+    width: 120px;
+    background-color: gray;
+}
+.subList:hover .subMenu{
+    display: block;
+}
+.subMenu a{
+    display: block;
+    text-align: left;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Timer
+        * Allow the user to add their own hours (up to 999:59:59)
+        * Time typed from right to left
+        * Only allow number input
+        * Bonus: Will highlight and show: "1 day" at 24hrs (etc. for days), "1 week" at 168hrs (etc. for weeks), "1 month" at 744 and 720hrs  
+        * Has presets i.e. 1 day, 12 hours, 6 hours, 2 hours, 1 hour, 30 mins, 15 mins 
+        * Stopwatch (if time)
+        * Current time
+        * Current time elsewhere (if time)
+        * Day of the week
+        * Date
+        * Weather (if time)
+        * Weather tomorrow (if time) -->
+
+    <label for="hours">Hours</label>
+    <input
+      type="number"
+      name="timerInput"
+      id="hours"
+      min="0"
+      max="999"
+      value="00"
+    />
+    <label for="minutes">Minutes</label>
+    <input type="number" name="timerInput" id="minutes" min="0" max="59" />
+    <label for="seconds">Seconds</label>
+    <input type="number" name="timerInput" id="seconds" min="0" max="59" />
+    <input type="button" id="resetBtn" value="Reset Timer" />
+    <input type="button" id="startBtn" value="Start Timer" />
+    <p id="display"></p>
+    <script src="/JS/Project/project.js"></script>
+    <!-- Simple calculator (if time)
+        * +, -, *, / -->
+
+    <!-- Math game (if time) 
+        * Similar to calculator-->
+  </body>
+</html>

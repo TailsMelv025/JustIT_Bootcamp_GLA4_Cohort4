@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link rel="stylesheet" href="/CSS/Assignments/Day7_Assignment.css" />
+  </head>
+  <body style="font-family: Arial, Helvetica, sans-serif">
+    <form action="/HTML/Day2/Forms/confirmation.html">
+      <table class="registrationForm">
+        <tr>
+          <th colspan="2" style="background-color: #668077">
+            <h1 style="color: white; text-align: center">Registration Form</h1>
+          </th>
+        </tr>
+        <tr>
+          <td style="text-align: right">
+            <label for="name"><b style="color: #40806a">Enter Name</b></label>
+          </td>
+          <td>
+            <input type="text" id="name" required />
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right">
+            <label for="code"
+              ><b style="color: #40806a">Enter Codeword</b></label
+            >
+          </td>
+          <td>
+            <input type="password" id="code" required />
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right">
+            <label for="comment"
+              ><b style="color: #40806a">Enter Comment</b></label
+            >
+          </td>
+          <td>
+            <textarea id="comment" rows="2"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right">
+            <label for="select"
+              ><b style="color: #40806a"
+                >Select your Favourite Instrument</b
+              ></label
+            >
+          </td>
+          <td>
+            <ul>
+              <li type="none">
+                <input type="checkbox" id="string" name="select" />
+                <label for="string">String Instruments</label>
+                <ol>
+                  <li type="disc">
+                    <input type="checkbox" id="violin" name="select" />
+                    <label for="violin">Violin</label>
+                  </li>
+                  <li type="armenian">
+                    <input type="checkbox" id="cello" name="select" />
+                    <label for="cello">Cello</label>
+                  </li>
+                  <li type="circle">
+                    <input type="checkbox" id="bass" name="select" />
+                    <label for="bass">Bass</label>
+                  </li>
+                  <li type="cjk-ideographic">
+                    <input type="checkbox" id="harp" name="select" />
+                    <label for="harp">Harp</label>
+                  </li>
+                  <li type="decimal">
+                    <input type="checkbox" id="guitar" name="select" />
+                    <label for="guitar">Guitar</label>
+                  </li>
+                </ol>
+              </li>
+              <li type="none">
+                <input type="checkbox" id="percussion" name="select" />
+                <label for="percussion">Percussion Instruments</label>
+                <ol>
+                  <li type="decimal-leading-zero">
+                    <input type="checkbox" id="drums" name="select" />
+                    <label for="drums">Drum Kit</label>
+                  </li>
+                  <li type="georgian">
+                    <input type="checkbox" id="piano" name="select" />
+                    <label for="piano">Piano</label>
+                  </li>
+                  <li type="hebrew">
+                    <input type="checkbox" id="triangle" name="select" />
+                    <label for="triangle">Triangle</label>
+                  </li>
+                  <li type="hiragana">
+                    <input type="checkbox" id="tamborine" name="select" />
+                    <label for="tamborine">Tamborine</label>
+                  </li>
+                  <li type="hiragana-iroha">
+                    <input type="checkbox" id="maracas" name="select" />
+                    <label for="maracas">Maracas</label>
+                  </li>
+                  <li type="katakana">
+                    <input type="checkbox" id="xylophone" name="select" />
+                    <label for="xylophone">Xylophone</label>
+                  </li>
+                </ol>
+              </li>
+              <li type="none">
+                <input type="checkbox" id="brass" name="select" />
+                <label for="brass">Brass Instruments</label>
+                <ol start="5">
+                  <li type="katakana-iroha">
+                    <input type="checkbox" id="trumpet" name="select" />
+                    <label for="trumpet">Trumpet</label>
+                  </li>
+                  <li type="lower-alpha">
+                    <input type="checkbox" id="trombone" name="select" />
+                    <label for="trombone">Trombone</label>
+                  </li>
+                </ol>
+              </li>
+              <li type="none">
+                <input type="checkbox" id="woodwind" name="select" />
+                <label for="woodwind">Woodwind Instruments</label>
+                <ol start="8">
+                  <li type="lower-greek">
+                    <input type="checkbox" id="clarinet" name="select" />
+                    <label for="clarinet">Clarinet</label>
+                  </li>
+                  <li type="lower-latin">
+                    <input type="checkbox" id="flute" name="select" />
+                    <label for="flute">Flute</label>
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right">
+            <label for="alliance"
+              ><b style="color: #40806a">Select Team</b></label
+            >
+          </td>
+          <td style="color: black">
+            <input type="radio" name="alliance" id="chaos" />
+            <label for="chaos">Chaos</label>
+            <input type="radio" name="alliance" id="order" />
+            <label for="order">Order</label>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right">
+            <label for="language"
+              ><b style="color: #40806a">Select Language</b></label
+            >
+          </td>
+          <td>
+            <select id="language" required>
+              <option></option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="js">JavaScript</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right">
+            <label for="photo"
+              ><b style="color: #40806a">Upload Photo</b></label
+            >
+          </td>
+          <td>
+            <input type="file" id="photo" accept="image/*" required />
+          </td>
+        </tr>
+        <tr>
+          <td align="center" colspan="2">
+            <button
+              type="reset"
+              style="width: 48%; border-radius: 6px"
+              onclick="alert('The form has been reset')"
+            >
+              Reset
+            </button>
+            <button type="submit" style="width: 48%; border-radius: 6px">
+              <b>Submit</b>
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

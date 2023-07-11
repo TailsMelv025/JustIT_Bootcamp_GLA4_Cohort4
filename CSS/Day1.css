@@ -1,0 +1,78 @@
+.p2{
+    color: cadetblue;
+    font-size: 30px;
+}
+/* selector select HTML element
+CSS single element
+CSS grouping
+CSS ID selector
+CSS Class selector */
+
+.p2, #.p4{
+    background-color: rgb(160, 160, 160);
+    font-size: 30px;
+}
+
+h1{
+    color: red;
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#p4{
+    color: green;
+}
+
+.div1 *{
+    background-color: orange;
+}
+
+input[type="text"]{
+    background-color: blue;
+}
+
+div.div1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p#p4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 
+Single and multi-line comment
+ */
+
+ /* FONTS
+ Web-safe fonts are pre-installed with most operating systems
+ Web fonts are imported (downloaded) from the internet */
+ @font-face {
+    font-family: "TsukimiRoundedLight";
+    src: url(../../../../../Downloads/Tsukimi_Rounded/TsukimiRounded-Light.ttf);
+ }
+
+ .fontest{
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    text-align: right;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-decoration: dotted;
+    font-style: italic;
+ }
+
+ /* Colours in CSS */
+ .heading1{
+    /* 
+    colour name
+    hexadecimal value
+    rgb value
+     */
+    color: #FFFF00;
+    background-color: rgba(0,0,255,.5);
+ }
+ body{
+    background-image: url("../../HTML/Day2/Links_and_Images/Giraffe.jpg");
+ }

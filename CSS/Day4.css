@@ -1,0 +1,63 @@
+div{
+    height: 300px;
+}
+.div1{
+    background-color: #cff;
+    position: relative;
+    top: 50px;
+    width: 200px;
+    z-index: 4;
+}
+.div2{
+    background-color: #fcf;
+    z-index: 2;
+    position: relative;
+    width: 300px;
+}
+.div3{
+    background-color: #ffc;
+    position: relative;
+    bottom: 50px;
+    width: 10vw;
+    z-index: 1;
+}
+.div4{
+    background-color: #ccc;
+    width: 100px;
+    position: relative;
+    bottom: 10%;
+    z-index: 3;
+}
+
+/* em, rem, vh, and vw units 16px 32px 48px
+
+em = relative to the font-size of the element (2em means 2 times the size of the current font)
+
+rem = relative to the font-size of the root element - in HTML doc, root is always <html>
+The default rem of html is 16px, so if we do font-size:2, the rem is 2*16=32
+
+vh = relative to 1% of the height of the viewport
+
+vw = relative to 1% of the width of the viewport*/
+
+.p1{
+    font-size: 32px;
+    bottom: 0px;
+    position: fixed;
+}
+.p2{
+    font-size: 2rem;
+    bottom: 0px;
+    position: fixed;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+}
+.container div{
+    width: 300px;
+    height: 5cm;
+    background-color: cornflowerblue;
+    border: 2px dashed;
+}

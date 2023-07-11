@@ -1,0 +1,166 @@
+input[type="text"]{
+    border: 0px;
+    border-bottom: 3px solid black;
+    height: 30px;
+    width: 400px;
+    background-color: bisque;
+    text-align: right;
+    border-radius: 8px;
+    cursor: url("/HTML/Day2/Links_and_Images/Fox.jpg"),auto;
+    font-size: 20px;
+    outline: 0px;
+}
+
+.test{
+    float: left;
+    /* Brings an element to the left of another element */
+    padding: ;
+    /* Lets you control space between content of button and button border */
+    margin: ;
+    /* Controls the space outside the border */
+}
+
+/* CSS Display Property
+The display property specifies the display behaviour of an element
+Below are some of the common display properties we can use:
+
+display:none;
+
+none = The element is completely removed
+
+inline = Displays an element as inline element (like <span>). 
+Any height and width properties will have no effect.
+    
+block = Displays an element as a block element (like <p>). 
+It starts on a new line, and takes up the whole width.
+
+inline-block = Displays an element as an inline-level block container. 
+The element itself is formatted as an inline element, 
+but you can apply height and width values.
+*/
+
+.h11, .h12{
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+}
+.h11{
+    background-color: rgb(255, 172, 172);
+}
+.h12{
+    background-color: rgb(141, 255, 255);
+}
+.h13{
+    display: none;
+}
+input[type="text"]{
+    display: block;
+}
+
+/* Visibility
+The visibility property specifies whether or not an element is visible
+  
+    visible = Default value. The element is visible
+ 
+    hidden = The element is hidden (but still takes up space)
+
+    collapse = Only for table rows (<tr>), row groups (<tbody>), columns (<col>), column groups (<colgroup>)
+                This value removes a row or column, but it does not affect the table layout
+                The space taken up by the row or column will be available for other content
+                ** If used on an element other than mentioned it will appear as "hidden"
+                */
+
+.div1{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(214, 183, 144);
+    visibility: hidden;
+}
+.data{
+    visibility: collapse;
+}
+
+/*Position: Absolute, relative and fixed
+The position property specifies the type of positioning method
+used for an element.
+
+
+  static = this is the default setting.
+  An element set this way will position itself according the flow of the web page
+
+
+  relative = is positioned relative to its normal position.
+
+
+  fixed = is positioned relative to the viewport,
+  which means it always stays in the same place even if the page is scrolled.
+
+
+  absolute = is positioned relative to the nearest positioned ancestor
+      (instead of positioned relative to the viewport, like fixed).
+      However; if an absolute positioned element has no positioned ancestors,
+      it uses the document body,
+      and moves along with page scrolling.
+
+
+  sticky = is positioned based on the user's scroll position.
+  A sticky element toggles between relative and fixed, depending on the scroll position.
+  It is positioned relative until a given offset position is met in the viewport
+    - then it "sticks" in place.
+*/
+.div2 {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    position: sticky;
+    bottom: 20px;
+    visibility: hidden;
+}
+.div3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 255, 0);
+    position: fixed;
+    visibility: hidden;
+}
+.div4{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    visibility: hidden;
+}
+
+/* NAVIGATION BAR */
+.navBar{
+    display: block;
+    position: fixed;
+}
+.navBar ul{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(200, 147, 0, 0.4);
+    top: 8px;
+    overflow:auto;
+}
+.navBar li{
+    float: left;
+}
+.navBar li a{
+    color: chocolate;
+    display: inline-block;
+    padding: 20px 10px;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 3px double black;
+}
+.navBar li a:hover{
+ font-weight: bold;
+ color: rgb(255, 137, 53);
+ background: linear-gradient(rgba(200,100,0,0.2),rgba(150,150,0,0.4),rgba(200,200,0,0.4));
+}

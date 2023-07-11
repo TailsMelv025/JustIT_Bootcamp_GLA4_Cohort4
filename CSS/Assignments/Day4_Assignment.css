@@ -1,0 +1,31 @@
+/* Create a paragraph and then use different units as a font size (px, cm, in, rem, em, %)
+a picture (vw, vh) */
+.sp1{
+    font-size: 4px;
+}
+.sp2{
+    font-size: 4cm;
+}
+.sp3{
+    font-size: 4in;
+}
+.sp4{
+    font-size: 4rem;
+}
+.sp5{
+    font-size: 4em;
+}
+.sp6{
+    font-size: 4%;
+}
+
+.img1{
+    width: 25vh;
+    height: 25vh;
+    object-fit: cover;
+}
+.img2{
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+}

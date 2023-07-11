@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeout</title>
+  </head>
+  <body>
+    <p id="myTimeout1"></p>
+    <br />
+    <button onclick="stopTimeout()">Stop Timeout</button>
+    <script>
+      const Timeout = setTimeout(
+        aTimeOutFunctionGoesHere,
+        howLongBeforeTimeout
+      );
+      function aTimeout() {
+        // document.getElementById("myTimeout1").innerHTML = "Text changed";
+        document.getElementById("myTimeout1").innerHTML += "Add text";
+      }
+
+      function stopTimeout() {
+        clearTimeout(timeout);
+        document.getElementById("myTimeout1").innerHTML =
+          "Time event stopped before it was fired";
+      }
+
+      // To call an if statement
+      let name = "aName";
+      if (name === "someName") {
+        // aTimeout()
+        const timeout = setTimeout(aTimeout, 5000);
+      } else {
+        stopTimeout();
+      }
+    </script>
+  </body>
+</html>

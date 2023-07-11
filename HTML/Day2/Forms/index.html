@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="./confirmation.html">
+      <!-- The for attribute of a label should always match the id of the associated input -->
+      <label for="firstName">First Name</label>
+      <input id="firstName" type="text" placeholder="Jonathan" required />
+      <br />
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" placeholder="Doenathan" required />
+      <br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        minlength="12"
+        placeholder="assword 😏"
+        required
+      />
+      <br />
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="J.Doe@email.com" required />
+      <br />
+      <label for="dob">Date of Birth</label>
+      <input type="date" required id="dob" />
+      <br />
+      <label for="number">Phone Number</label>
+      <input type="tel" required id="number" placeholder="07801230123" />
+      <br />
+      <input type="reset" id="resetBtn" />
+      <br />
+      <input type="submit" id="submitBtn" />
+    </form>
+  </body>
+</html>

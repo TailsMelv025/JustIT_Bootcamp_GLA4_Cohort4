@@ -1,0 +1,19 @@
+JS Project Planning
+
+What is your project concept/idea?
+What will you need to achieve this? e.g. if JS ... what functions?
+
+Have you planned/ thought about how the flow of functions will need to work?
+e.g. if planning a game how is the user input detected and used
+
+Project Ideas:
+.Flip card game (pairs or 3's)      .Math Game (user chooses between +, -, / & *)
+.E-Commerce front of site           .Calculator 
+.Historic theme - JS Timeline?      .Interactive Map
+.Timer                              .Interactive Quiz 
+.Weather App                        
+
+Features of the page e.g. modal, carousel's etc.
+
+Have you got your colour palette planned?
+Have you collated media files ready?

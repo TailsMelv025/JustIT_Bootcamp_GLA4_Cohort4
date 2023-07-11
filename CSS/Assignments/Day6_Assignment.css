@@ -1,0 +1,22 @@
+/* TODO Create a div with animation in T */
+
+@keyframes assignment{
+    25% {right:0; top: 0;}
+    37.5% {left:50%; top: 0;}
+    62.5% {bottom:0; left: 50%;}
+    87.5% {top:0; left: 50%;}
+    100% {left:0; top: 0;}
+}
+
+.assignment1{
+    width:250px; 
+    height: 250px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    animation-name: assignment;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    top:0;
+    left: 0;
+}

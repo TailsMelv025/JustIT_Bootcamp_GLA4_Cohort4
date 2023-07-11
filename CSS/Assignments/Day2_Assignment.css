@@ -1,0 +1,22 @@
+/* TODO
+Create a div with 500 width and 500 height
+Add background image
+Try the following background properties: 
+*Background Size
+*Background Position
+*Background Repeat
+*Background Color */
+
+.div1{
+    width: 500px;
+    height: 500px;
+    background-image: url(/HTML/Day2/Links_and_Images/Fox.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: orangered;
+}
+
+/* TODO
+Search styling input element for text box
+ */

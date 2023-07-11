@@ -1,0 +1,156 @@
+body{
+    background-color: aquamarine;
+}
+
+.p1{
+    background-color: rgb(194, 129, 255);
+    color:  hsl(300, 100%,33%);
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    line-height: 30px;
+    font-variant: small-caps;
+    text-transform: lowercase;
+   text-decoration:line-through;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 
+HSL
+RGB
+Color name
+Hexadecimal
+ */
+
+ /* Background: define the background effects on element */
+
+ body{
+    background-image: url(/HTML/Day2/Links_and_Images/Elephant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 10vw right 10vh;
+    background-attachment: fixed;
+    background: linear-gradient(90deg, rgb(110, 196, 142) 0%, rgb(114, 114, 255) 49%, rgba(0,212,255,1) 100%);
+ }
+
+ .paragraph1{
+    border-style:dotted;
+    border-left: 20px;
+    border-color: blue;
+ }
+ .profile{
+    border-bottom-style:solid;
+    border-width: 10px;
+    border-color: magenta;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+ }
+    
+ .paragraph2{
+    width: 300px;
+    height: 300px;
+    border-top-right-radius: 100% 50%;
+ }
+ h1{
+    border-bottom: 10px double red;
+ }
+
+ /* CSS Box Model, Margin, and Padding
+ 
+ The CSS box model is essentially a box that wraps around every HTML element. 
+ It consists of: margins, borders, padding, and the actual content
+ The box model allows us to place a border around elements and space elements in relation to other elements
+ 
+ * Content - the content of the box, where text and images appear
+ 
+ * Padding - the area between content and border. The padding is transparent
+ 
+ * Border - a border that goes around the padding and content
+ 
+ * Margin - area outside the border. The margin is transparent */
+
+ .div2{
+   width: 200px;
+   height: 300px;
+   border: 5px solid black;
+   padding: 20px;
+   padding-left: 30px;
+   margin-top: 40px;
+ }
+
+ /* 
+ 1. CSS Float property is a positioning property. 
+ It pushes an element to the left or right, 
+ allowing other elements to wrap around it. 
+ It is generally used with images.
+
+ 2. CSS Clear property: When we use the float property, 
+ and we want the next element below (not on right or left), 
+ we will have to use the clear property
+ */
+
+.profile2{
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+   float:left;
+   margin-right: 20px;
+}
+
+.float1 img{
+   float: left;
+}
+.float2 img{
+   float: right;
+}
+.float3 img{
+   float: left;
+}
+
+.float1, .float2, .float3{ 
+   border: 2px solid red;
+   clear: both;
+   overflow: auto;
+}
+
+button{
+   padding: 20px;
+   font-size: 15px;
+   background-color: coral;
+   border: 4px double black;
+   color: rgb(103, 50, 31);
+   cursor: help;
+   border-radius: 8px;
+}
+
+button:hover{
+   background: radial-gradient( farthest-corner, rgb(255, 0, 212), rgb(241, 255, 44), rgb(255, 186, 107));
+   color: #003c85;
+}
+
+/* 
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the mouse hovers over it
+a:active - a link the moment it is clicked
+ */
+ .link:link{
+   text-decoration: underline;
+   color: #990;
+ }
+ .link:visited{
+   text-decoration:wavy;
+ }
+ .link:hover{
+   color: #cc0;
+ }
+ .link:active{
+   color: #ff0;
+ }

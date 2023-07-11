@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge</title>
+  </head>
+  <!-- HTML - Day 2 - Challenge:
+Create some example forms. 
+Must include an example of each of the following input types:
+-Radio buttons
+-Checkboxes
+-File Upload Input
+-A Textarea
+-A Dropdown List
+
+Then put together some example lists, tables, images and anchors tags 
+in order to familiarise yourself with them. -->
+  <body>
+    <form action="">
+      <h1>Challenge</h1>
+      <h2>Radio Buttons?</h2>
+      <input type="radio" id="A" name="Options1" />
+      <label for="A">Option A</label>
+      <br />
+      <input type="radio" id="B" name="Options1" />
+      <label for="B">Option B</label>
+      <br />
+      <input type="radio" id="C" name="Options1" />
+      <label for="C">Option C</label>
+      <br />
+
+      <h2>Checkboxes?</h2>
+      <input type="checkbox" id="checkRadioButtons" name="ToDo" />
+      <label for="checkRadioButtons">Radio Buttons</label>
+      <br />
+      <input type="checkbox" id="checkCheckboxes" name="ToDo" />
+      <label for="checkCheckboxes">Checkboxes</label>
+      <br />
+      <input type="checkbox" id="checkFileUploadInput" name="ToDo" />
+      <label for="checkFileUploadInput">File Upload Input</label>
+      <br />
+      <input type="checkbox" id="checkTextArea" name="ToDo" />
+      <label for="checkTextArea">Text Area</label>
+      <br />
+      <input type="checkbox" id="checkDropdown" name="ToDo" />
+      <label for="checkDropdown">Dropdown</label>
+      <br />
+
+      <h2>The return of the Radio Buttons</h2>
+      <input type="radio" id="E" name="Options2" />
+      <label for="E"
+        >Option E
+        <img src="../Links_and_Images/Elephant.jpg" width="100" alt=""
+      /></label>
+      <br />
+      <input type="radio" id="F" name="Options2" />
+      <label for="F"
+        >Option F <img src="../Links_and_Images/Fox.jpg" width="100" alt=""
+      /></label>
+      <br />
+      <input type="radio" id="G" name="Options2" />
+      <label for="G"
+        >Option G <img src="../Links_and_Images/Giraffe.jpg" width="100" alt=""
+      /></label>
+      <br />
+
+      <h2>Dropdown?</h2>
+      <label for="dropdown">Favourite Prime number between 1 and 25?</label>
+      <select id="dropdown">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="7">7</option>
+        <option value="11">11</option>
+        <option value="13">13</option>
+        <option value="17">17</option>
+        <option value="19">19</option>
+        <option value="23">23</option>
+      </select>
+
+      <h2>Feedback</h2>
+      <textarea
+        id="feedback"
+        cols="device-width"
+        rows="5"
+        placeholder="Enter feedback here..."
+      ></textarea>
+      <br />
+
+      <br />
+      <label for="fileupload">
+        <a href="https://www.collinsdictionary.com/dictionary/english/upload"
+          >Upload</a
+        >
+        a file:</label
+      >
+      <input type="file" id="fileupload" />
+
+      <br />
+      <input type="reset" id="resetBtn" />
+      <input type="submit" id="submitBtn" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 4</title>
+  </head>
+  <body style="font-family: Arial, Helvetica, sans-serif">
+    <!-- TODO -->
+    <ul>
+      <li>
+        Web Designing Tools
+        <ul>
+          <li>
+            HTML
+            <ul>
+              <li>HTML 4</li>
+              <li>HTML 5</li>
+            </ul>
+          </li>
+          <li>
+            CSS
+            <ul>
+              <li>
+                CSS 1.0 in 17 December 1996 by Hakon Wium Lie and Bert Bos
+              </li>
+              <li>CSS 2.0 in May 1998.</li>
+              <li>CSS 2.1 in 7 June 2011.</li>
+              <li>CSS 3.0 in June 2012.</li>
+            </ul>
+          </li>
+          <li>JavaScript</li>
+          <li>Responsive in 19 June 2012</li>
+        </ul>
+      </li>
+      <li>
+        Web Development Tools
+        <ul>
+          <li>PHP</li>
+          <li>
+            .NET
+            <ul>
+              <li>C#.NET</li>
+              <li>VB.Net</li>
+              <li>ASP.Net</li>
+            </ul>
+          </li>
+          <li>JSP</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Non-Semantic Tags -->
+    <div class="header">Header</div>
+    <div class="footer">Footer</div>
+
+    <!-- Semantic Tags -->
+    <!-- These are elements which describe the job they do -->
+    <header>Header</header>
+    <footer>Footer</footer>
+    <section></section>
+    <figure>
+      <img src="../Day2/Links_and_Images/Fox.jpg" alt="Fox" />
+      <figcaption><small>[1] Fox</small></figcaption>
+    </figure>
+    <nav>
+      <a href="../Day1/Day1.html" target="_blank">HTML_NewTab</a>
+      <a href="../Day1/Day1.html">HTML_ThisTab</a>
+    </nav>
+
+    <!-- TODO
+    * Create an article having title and some details
+    * Create a simple navbar having three tabs with links open
+    * Add a picture with caption
+    * Use sematic tags -->
+    <header>
+      <h1>
+        Header Heading
+        <img
+          src="https://cdn.logo.com/hotlink-ok/logo-social.png"
+          alt="LOGO logo"
+          width="100"
+        />
+      </h1>
+    </header>
+    <aside>
+      <nav>
+        <a href="../Day1/Day1.html" target="_blank">Day1</a>
+        <a href="../Day3/Day3.html" target="_blank">Day3</a>
+        <a href="../Day3/Day3_Assignment.html" target="_blank"
+          >Day3 Assignment</a
+        >
+      </nav>
+    </aside>
+    <section>
+      <figure>
+        <img
+          src="../Day2/Links_and_Images/Giraffe.jpg"
+          width="500"
+          alt="Giraffe"
+        />
+        <figcaption><small>[a] This is an animal</small></figcaption>
+      </figure>
+      <body>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+        molestias minus assumenda iure voluptatum. Laborum vel porro, nobis
+        explicabo unde repellendus officia recusandae accusantium cumque
+        reiciendis temporibus repudiandae aliquam odit.
+      </body>
+    </section>
+
+    <!-- Basic -->
+    <form action="">
+      <label for="name">Enter your Name</label>
+      <input type="text" id="name" name="name" />
+    </form>
+    <!-- Selection option -->
+    <select name="" id="">
+      <option value="">Select Country</option>
+      <option value="UK">🇬🇧 United Kingdom</option>
+      <option value="GH">🇬🇭 Ghana</option>
+      <option value="BR">🇧🇷 Brazil</option>
+    </select>
+
+    <br />
+    <br />
+    <br />
+    <!-- Field Set and Legend -->
+    <!-- They are used to group relevant items -->
+    <fieldset>
+      <legend>User Login Form</legend>
+      <form action="">
+        <input type="text" id="userName" /> <br /><br />
+        <input type="password" id="password" /> <br /><br />
+        <input type="submit" />
+      </form>
+    </fieldset>
+
+    <br />
+    <!-- TODO -->
+    <!-- Registration Form -->
+    <form action="/HTML/Day2/Forms/confirmation.html">
+      <table style="background-color: darkblue; color: white">
+        <tr style="background-color: darkorange">
+          <th colspan="2" style="font-size: larger">Sign Up</th>
+        </tr>
+        <tr>
+          <td align="right"><label for="firstName">First Name</label></td>
+          <td>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="Enter First Name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="lastName">Last Name</label></td>
+          <td>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Enter Last Name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="dob">Date of Birth</label></td>
+          <td>
+            <select name="dob" id="day">
+              <option value=""></option>
+              <option value="21st">21</option>
+              <option value="22nd">22</option>
+              <option value="23rd">23</option>
+              <option value="24th">24</option>
+              <option value="25th">25</option>
+            </select>
+            <select name="dob" id="month">
+              <option value=""></option>
+              <option value="JAN">January</option>
+              <option value="FEB">February</option>
+              <option value="MAR">March</option>
+            </select>
+            <select name="dob" id="year">
+              <option value=""></option>
+              <option value="1995">1995</option>
+              <option value="1996">1996</option>
+              <option value="1997">1997</option>
+              <option value="1998">1998</option>
+              <option value="1999">1999</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="sex">Sex</label></td>
+          <td>
+            <input type="radio" name="sex" id="m" /><label for="M">Man</label>
+            <input type="radio" name="sex" id="f" /><label for="F">Woman</label>
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="email">E-Mail</label></td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter E-Mail"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="phone">Phone Number</label></td>
+          <td>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter Phone Number"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="pass">Password</label></td>
+          <td>
+            <input type="password" id="pass" required />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="pass">Confirm Password</label></td>
+          <td>
+            <input type="password" id="pass" required />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="checkbox" id="confirm" required />
+            <label for="confirm">I Agree to the Terms of Use</label>
+          </td>
+        </tr>
+        <tr style="background-color: darkorange">
+          <td align="right" colspan="2">
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
