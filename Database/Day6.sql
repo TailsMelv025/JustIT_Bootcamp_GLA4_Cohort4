@@ -71,10 +71,9 @@ USE company;
 SELECT * FROM instructor CROSS JOIN trainer;
 
 -- write a query which displays full name of employee and its manager
-SELECT CONCAT(fname," ",lname) FROM employee a LEFT JOIN employee b ON a.ssn=b.superssn;
+SELECT CONCAT(a.fname," ",a.lname) AS employee, CONCAT(b.fname," ",b.lname) AS manager FROM employee a LEFT JOIN employee b ON a.ssn=b.superssn;
 
 -- retreive Employee Full Name and total amount of hours Hours for an employee who is working more than 40 hours.
-SELECT CONCAT(fname," ",lname) AS `name`, CONCAT(ROUND(hours), " hrs") hours FROM employee 
-FULL JOIN works_on ON ssn=essn 
-WHERE hours>=30
-ORDER BY hours DESC;
+SELECT CONCAT(fname," ",lname) AS `name`, CONCAT(SUM(hours), " hrs") hours FROM employee 
+FULL JOIN works_on ON ssn=essn
+GROUP BY ssn HAVING hours>=40;

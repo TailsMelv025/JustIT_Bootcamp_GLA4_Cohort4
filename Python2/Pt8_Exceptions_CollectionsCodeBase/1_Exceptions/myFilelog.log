@@ -1,0 +1,12 @@
+CRITICAL:root:Critical
+ERROR:root:Error
+WARNING:root:Warning
+INFO:root:Info
+DEBUG:root:Debug
+CRITICAL:root:Critical
+ERROR:root:Error
+WARNING:root:Warning
+INFO:root:Divided 1 / 2 = 0.5
+WARNING:root:User attempted to divide by zero
+WARNING:root:User attempted to divide by zero
+WARNING:root:Wed Jul 26 14:43:24 2023| User attempted to divide by zero

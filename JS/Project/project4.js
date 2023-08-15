@@ -29,7 +29,7 @@ function startTimer() {
     parseInt(minsVal) * minsMulti +
     parseInt(hrsVal) * hrsMulti;
   console.log(countTo); // check value of secs + mins + hrs
-  countTo += new Date().getTime(); // add value to current datetime in milliseconds
+  // countTo += new Date().getTime(); // add value to current datetime in milliseconds
 
   // Start countdown
   countDown = setInterval(() => countTimer(countTo), secsMulti);
@@ -39,24 +39,28 @@ function startTimer() {
 function countTimer(countTo) {
   console.log(countTo); // check countTo has been retrieved
 
-  // Get current datetime in milliseconds
-  let nowMs = new Date().getTime();
+  // // Get current datetime in milliseconds
+  // let nowMs = new Date().getTime();
 
-  // Find the difference between now and the input
-  const countDif = countTo - nowMs;
-  console.log(countDif); // check that the value is increasing every second
+  // // Find the difference between now and the input
+  // const countDif = countTo - nowMs;
+  // console.log(countDif); // check that the value is increasing every second
+
+  // Make countTo decrease by 1s
+  countTo -= secsMulti;
+  console.log(countTo); // check countTo has decreased by 1000 milliseconds
 
   // Time calculations for hours, minutes and seconds
-  const hrsDisp = Math.floor(countDif / hrsMulti);
-  const minsDisp = Math.floor((countDif % hrsMulti) / minsMulti);
-  const secsDisp = Math.floor((countDif % minsMulti) / secsMulti);
+  const hrsDisp = Math.floor(countTo / hrsMulti);
+  const minsDisp = Math.floor((countTo % hrsMulti) / minsMulti);
+  const secsDisp = Math.floor((countTo % minsMulti) / secsMulti);
 
   // Display the result
   const countDisplay = document.getElementById("display");
   countDisplay.innerHTML = hrsDisp + "h " + minsDisp + "m " + secsDisp + "s ";
 
   // When the countdown hits 0, stop
-  if (secsDisp == 0) {
+  if (countTo == 0) {
     clearInterval(countDown);
   }
 }
