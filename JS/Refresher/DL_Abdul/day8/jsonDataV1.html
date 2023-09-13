@@ -1,10 +1,10 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JSON</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- JSON - JavaScript Object Notation
 Text based data format that is used to transfer data.
 //
@@ -20,65 +20,74 @@ Can be created and interpreted by other langunages
 Popular method of transferring data - commonly used by APIs
 -->
 
-<p id="myJsonObject"></p>
-<p id="myObjectKeys"></p>
-<p id="stringedObject"></p>
+    <p id="myJsonObject"></p>
+    <p id="myObjectKeys"></p>
+    <p id="stringedObject"></p>
 
-<script>
-//courseDetails is the JSON object 
-let courseDetails = {
-        //key / value pairs - both wrapped in double quotes
-    "fullName": "Jane Doe", // fullName at index position 0
-    "age" : "26", // age at index position 1
-    "language": "JavaScript", // language at index position 2
-    "course" : "Software Bootcamp" // course language at index position 3
-} 
-console.log(courseDetails);
-//access values in json object by name/variable/property/attribute
-let courseObject = document.getElementById();
+    <script>
+      //courseDetails is the JSON object
+      let courseDetails = {
+        // key / value pairs - both wrapped in double quotes
+        fullName: "Jane Doe", // fullName at index position 0
+        age: "26", // age at index position 1
+        language: "JavaScript", // language at index position 2
+        course: "Software Bootcamp", // course language at index position 3
+      };
 
-// objectName.atrributeName to display the values
-    courseObject.innerHTML =
+      //   key/value pairs - key not wrapped in double quotes
+      myObject = {
+        age: "10",
+        name: "Paul",
+      };
 
+      // object.propertyName
+      myObject.age;
+      myObject.name;
+      // object[propertyName]
+      //   myObject[age];
+      myObject[name];
 
-// access values by index 
-    document.getElementById()
-    document.write()
-    document.write()
-//convert an object to string using stingify
+      console.log(courseDetails);
+      //access values in json object by name/variable/property/attribute
+      let courseObject = document.getElementById("myJsonObject");
 
-let strCourseDetails = JSON.stringify(courseDetails)
-document.write()
-document.write()
-document.write()
+      // objectName.atrributeName to display the values
+      courseObject.innerHTML =
+        "User " +
+        courseDetails.fullName +
+        " is " +
+        courseDetails.age +
+        " learning " +
+        courseDetails.language +
+        " in " +
+        courseDetails.course;
+      // access values by index
+      document.getElementById("myObjectKeys").innerHTML = Object.keys(
+        courseDetails[0] + " : " + courseDetails.fullName
+      );
+      document.write();
+      document.write();
+      //convert an object to string using stingify
 
+      let strCourseDetails = JSON.stringify(courseDetails);
+      document.write();
+      document.write();
+      document.write();
 
-//convert a string using parse to an object
-let stringOfText = 
+      //convert a string using parse to an object
+      let stringOfText = document.write("");
 
+      //let userData = {"user1":"A", "user2": "B" , "user3": "C" , "user4": "D" , "user5": "E" }
+      let testData = "";
+      document.write();
+      let myTextData = document.write();
 
-document.write("")
-
-
-//let userData = {"user1":"A", "user2": "B" , "user3": "C" , "user4": "D" , "user5": "E" }
-let testData = ''
-document.write()
-let myTextData = 
-document.write()
-
-
-//arrays
-document.write()
-let myArrays = ''
-document.write("")
-//convert an array using parse to an Json Array
-let jsonArray = 
-document.write()
-
-
-
-</script>
-
-
-</body>
+      //arrays
+      document.write();
+      let myArrays = "";
+      document.write("");
+      //convert an array using parse to an Json Array
+      let jsonArray = document.write();
+    </script>
+  </body>
 </html>

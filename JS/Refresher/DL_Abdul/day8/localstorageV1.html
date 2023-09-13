@@ -1,10 +1,10 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Local Storage</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Local storage  stores data in the browser console wih no expiration date
     Data is not deleted even if the browser is closed. Therefore, the data is 
     avaiable for future session
@@ -12,30 +12,37 @@
     <p id="localStorage1"></p>
     <p id="localStorage2"></p>
     <p id="localStorage3"></p>
+    <p id="localStorage4"></p>
 
+    <script>
+      // window.localStorage or  localStorage
+      // localStorage.setItem(key, value) // saves key value pairs in the browser console
 
-      <script>
-// window.localStorage or  localStorage
-// localStorage.setItem(key, value) // saves key value pairs in the browser console
+      // localStorage
+      localStorage.setItem("fullName", "Melvin Osei");
+      localStorage.setItem("interest", "JavaScript");
 
-   localStorage
-   localStorage
+      // localStorage.getItem(key) // retireves value base on the key provide in the browser console
 
-    // localStorage.getItem(key) // retireves value base on the key provide in the browser console
+      console.log(localStorage.getItem("interest"));
+      console.log(localStorage.getItem("fullName"));
+      console.log(localStorage.getItem("city"));
+      console.log(localStorage.getItem("country"));
 
-    console.log()
-    console.log()
-    
-    document.getElementById().innerHTML 
-    document.getElementById().innerHTML 
+      document.getElementById("localStorage1").innerHTML =
+        localStorage.getItem("interest");
+      document.getElementById("localStorage2").innerHTML =
+        localStorage.getItem("fullName");
+      document.getElementById("localStorage3").innerHTML =
+        localStorage.getItem("city");
+      document.getElementById("localStorage4").innerHTML =
+        localStorage.getItem("country");
 
-    // localStorage.removeItem(key) remove item from storage
-    //localStorage
+      // localStorage.removeItem(key) remove item from storage
+      //localStorage
 
-
-    //localStorage.clear())  clear everthing from local storage
-    //localStorage
-
+      //localStorage.clear())  clear everthing from local storage
+      //localStorage
     </script>
-</body>
+  </body>
 </html>
