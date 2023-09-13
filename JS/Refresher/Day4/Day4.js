@@ -1,6 +1,12 @@
-/*
-Variables declared inside a { } block cannot be accessed from out
+// Scope
+/* JavaScript has 3 types of scope:
+- Block Scope
+- Function Scope (AKA Local)
+- Global Scope
 */
+
+//Block Scope:
+// Variables declared inside a { } block cannot be accessed from outside the block
 
 let num = true;
 
@@ -187,4 +193,63 @@ if (customer.homeOwner === true) {
 } else {
   //sorry you dont meet the required age!
   console.log("Sorry, you dont meet the required age!");
+}
+
+// If more than 3 else if statements in an if statement, use a switch case statement instead
+// switch case - if/else
+
+let scenario = 4;
+switch (scenario) {
+  case 1:
+    console.log(1);
+    break;
+  case 2:
+    console.log(2);
+    break;
+  case 3:
+    console.log(3);
+    break;
+  default:
+    console.log("Sorry, no match.");
+    break;
+}
+
+// TODO - switch case statement to display the days of the week
+let dayOfTheMonth = Number(
+  prompt(
+    "What day in August 2023 is it?",
+    "Type in the Number for the day of the month"
+  )
+);
+let dayOfTheWeek = dayOfTheMonth % 7;
+
+switch (dayOfTheWeek) {
+  case 1:
+    console.log("It is a Tuesday");
+    document.write(`It is Tuesday, ${dayOfTheMonth} August 2023`);
+    break;
+  case 2:
+    console.log("It is a Wednesday");
+    document.write(`It is Wednesday, ${dayOfTheMonth} August 2023`);
+    break;
+  case 3:
+    console.log("It is a Thursday");
+    document.write(`It is Thursday, ${dayOfTheMonth} August 2023`);
+    break;
+  case 4:
+    console.log("It is a Friday");
+    document.write(`It is Friday, ${dayOfTheMonth} August 2023`);
+    break;
+  case 5:
+    console.log("It is a Saturday");
+    document.write(`It is Saturday, ${dayOfTheMonth} August 2023`);
+    break;
+  case 6:
+    console.log("It is a Sunday");
+    document.write(`It is Sunday, ${dayOfTheMonth} August 2023`);
+    break;
+  default:
+    console.log("It is a Monday");
+    document.write(`It is Monday, ${dayOfTheMonth} August 2023`);
+    break;
 }

@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body onload="updateTime()">
+    Current Date:
+    <p id="theDate"></p>
+    Current Date Time :
+    <p id="dateTimenfo"></p>
+    Current Date only:
+    <p id="dateInfo"></p>
+    Current Time :
+    <p id="timeInfo"></p>
+    Current Hour :
+    <p id="hourInfo"></p>
+    Current Minutes :
+    <p id="minutsInfo"></p>
+    Current Seconds :
+    <p id="secondsInfo"></p>
+
+    <script>
+        function callFunction1(){
+            // create an instance object from the date class/library and assign it to a variable 
+            //let d =  // return a copy of the date time
+
+            //create variables and assign each to the respective date instance object method 
+            let localDateTime = d.AMethodFromTheDateObject();
+            let localDate = d.AMethodFromTheDateObject();
+            let localTime = d.AMethodFromTheDateObject();
+            let getHours = d.AMethodFromTheDateObject();
+            let getMins = d.AMethodFromTheDateObject();
+            let getSecs = d.AMethodFromTheDateObject();
+
+            document.getElementById("theDate").innerHTML = assigTheVariable;
+            document.getElementById("dateTimenfo").innerHTML = assigTheVariable;
+            document.getElementById("dateInfo").innerHTML = assigTheVariable;
+            document.getElementById("timeInfo").innerHTML = assigTheVariable;
+            document.getElementById("hourInfo").innerHTML = assigTheVariable;
+            document.getElementById("minutsInfo").innerHTML = assigTheVariable;
+            document.getElementById("secondsInfo").innerHTML = assigTheVariable;
+
+
+        }
+
+//function to update time(minutes,seconds and hours)
+function toUpdateTime(){
+    callTheSetIntervalFunntion(callFunction1, secondsToUpdateBy)
+}
+
+    </script>
+</body>
+</html>
